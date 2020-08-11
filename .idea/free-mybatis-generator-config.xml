@@ -27,6 +27,30 @@
             </Config>
           </value>
         </entry>
+        <entry key="orders">
+          <value>
+            <Config>
+              <option name="comment" value="true" />
+              <option name="daoMvnPath" value="src/main/java" />
+              <option name="daoName" value="OrdersDao" />
+              <option name="daoPackage" value="com.jn.dao" />
+              <option name="daoPostfix" value="Dao" />
+              <option name="modelMvnPath" value="src/main/java" />
+              <option name="modelName" value="Orders" />
+              <option name="modelPackage" value="com.jn.entity" />
+              <option name="name" value="orders" />
+              <option name="overrideJava" value="true" />
+              <option name="overrideXML" value="true" />
+              <option name="primaryKey" value="" />
+              <option name="projectFolder" value="$PROJECT_DIR$/Lcn_Order" />
+              <option name="tableName" value="orders" />
+              <option name="useLombokPlugin" value="true" />
+              <option name="useSchemaPrefix" value="true" />
+              <option name="xmlMvnPath" value="src/main/resources" />
+              <option name="xmlPackage" value="mapper" />
+            </Config>
+          </value>
+        </entry>
         <entry key="pay">
           <value>
             <Config>

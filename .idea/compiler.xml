@@ -7,8 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lcn_parent" />
         <module name="Lcn_Order" />
+        <module name="Lcn_Tm" />
         <module name="order" />
         <module name="Lcn_Pay" />
         <module name="lcntm" />
@@ -16,7 +16,7 @@
         <module name="EurekaServer" />
         <module name="pay" />
         <module name="Lcn" />
-        <module name="Lcn_Tm" />
+        <module name="Lcn_parent" />
       </profile>
     </annotationProcessing>
   </component>

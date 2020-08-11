@@ -17,20 +17,20 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: root
-    url: jdbc:mysql://localhost:3306/lcn_order?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/lcn_order?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    dbcp2:
-#      initial-size: 5
-#      min-idle: 5
-#      max-total: 5
-#      max-wait-millis: 200
-#      validation-query: SELECT 1
-#      test-while-idle: true
-#      test-on-borrow: false
-#      test-on-return: false
+    dbcp2:
+      initial-size: 5
+      min-idle: 5
+      max-total: 5
+      max-wait-millis: 200
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
 mybatis:
   mapper-locations: classpath:mapper/*.xml
 
 tx-lcn:
   client:
-    manager-address: 127.0.0.1:90
+    manager-address: 127.0.0.1:160

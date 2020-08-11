@@ -1,8 +1,8 @@
 package com.jn.controller;
 
 import com.codingapi.txlcn.tc.annotation.LcnTransaction;
-import com.jn.dao.OrderDao;
-import com.jn.entity.Order;
+import com.jn.dao.OrdersDao;
+import com.jn.entity.Orders;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,15 +17,15 @@ public class LcnOrderController {
 
 
     @Autowired
-    OrderDao orderDao;
+    OrdersDao orderDao;
 
     @Autowired
     RestTemplate restTemplate;
 
-    @RequestMapping(value = "/pay", method = RequestMethod.POST)
-    @LcnTransaction
+    @RequestMapping(value = "/order", method = RequestMethod.POST)
     @Transactional(rollbackFor = Exception.class)
-    public String pay(@RequestBody Order order) {
+    @LcnTransaction
+    public String pay(@RequestBody Orders order) {
 
         JSONObject date = new JSONObject();
         date.put("id", order.getId());
@@ -33,6 +33,7 @@ public class LcnOrderController {
         restTemplate.postForEntity("http://localhost:90/pay", date, String.class);
 
         orderDao.insert(order);
+        //int i = 1 / 0;
         return "Success";
     }
 
