@@ -8,10 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Lcn_parent" />
-        <module name="Lcn_Pay" />
-        <module name="Lcn_Tm" />
-        <module name="EurekaServer" />
         <module name="Lcn_Order" />
+        <module name="order" />
+        <module name="Lcn_Pay" />
+        <module name="lcntm" />
+        <module name="eureka" />
+        <module name="EurekaServer" />
+        <module name="pay" />
+        <module name="Lcn" />
+        <module name="Lcn_Tm" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +26,10 @@
       <module name="Lcn_Order" options="-parameters" />
       <module name="Lcn_Pay" options="-parameters" />
       <module name="Lcn_Tm" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="lcntm" options="-parameters" />
+      <module name="order" options="-parameters" />
+      <module name="pay" options="-parameters" />
     </option>
   </component>
 </project>

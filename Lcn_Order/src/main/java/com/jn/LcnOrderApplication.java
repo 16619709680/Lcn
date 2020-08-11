@@ -16,7 +16,6 @@ public class LcnOrderApplication {
     }
 
     @Bean
-    @LoadBalanced
     public RestTemplate getRestTemplate(){
         return new RestTemplate();
     }

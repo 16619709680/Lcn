@@ -14,4 +14,20 @@ public class Order implements Serializable {
     private String ordername;
 
     private static final long serialVersionUID = 1L;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getOrdername() {
+        return ordername;
+    }
+
+    public void setOrdername(String ordername) {
+        this.ordername = ordername;
+    }
 }

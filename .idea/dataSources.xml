@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="lcn_order@localhost" uuid="282b0fc7-3218-4c41-b1ea-ba96096dcc80">
+    <data-source source="LOCAL" name="MySQL for 5.1 - lcn_order@localhost" uuid="2742c0fc-f129-4766-b089-63a8bab4bb2f">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/lcn_order</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="lcn_pay@localhost" uuid="9df6215d-2d08-4649-b0a8-1d74b0d18964">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/lcn_pay</jdbc-url>
     </data-source>
   </component>
 </project>
